@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./kalendae.css" type="text/css">
+    <script type='text/javascript' src='./kalendae.standalone.js'></script>
+    <title>多选日历</title>
+    <style type="text/css">
+        .kalendae .k-calendar {
+            display: inline-block;
+            zoom:1;
+            *display:inline;
+            /* width改为100% width:155px;*/ 
+            width: 100%; 
+            vertical-align:top;
+        }
+        .kalendae .k-title,
+        .kalendae .k-header,
+        .kalendae .k-days {
+            /* width改为100% */
+            /* width:154px; */
+            width: 100%;
+            display:block;
+            overflow:hidden;
+        }
+        .kalendae .k-header span {
+            text-align:center;
+            font-weight:bold;
+            /* 这里的width要和.kalendae .k-days span 里面的相等 */
+            width:12.8%;
+            padding:1px 0;
+            color:#666;
+        }
+        .kalendae .k-days span {
+            /* 水平居中 */
+            text-align:center;
+            width:12.8%;
+            /* 高度 4.5em效果比较好 height等于line-height就能垂直居中了 */
+            height:4.5em;
+            line-height:4.5em;
+            padding:2px 3px 2px 2px;
+            border:1px solid transparent;
+            border-radius:3px;
+            color:#999;
+        }
+        .kalendae .k-days span {
+            /* 水平居中 */
+            text-align:center;
+            width:12.8%;
+            /* 高度 4.5em效果比较好 height等于line-height就能垂直居中了 */
+            height:4.5em;
+            line-height:4.5em;
+            padding:2px 3px 2px 2px;
+            border:1px solid transparent;
+            border-radius:3px;
+            color:#999;
+        }
+    </style>
+</head>
+<body>
+    <p>输入框（多选）：</p>
+    <input type="text" class="auto-kal" data-kal="mode:'multiple'" style="width: 100%;">
+</body>
+</html>
